@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <link rel="stylesheet" type="text/css" href="edgrid.css">
+    <link rel="icon" href="logo.png">
+    <title>Document</title>
+</head>
+<script>
+  document.addEventListener('mousemove', function(e) {
+    const trail = document.createElement('div');
+    trail.className = 'trail';
+    document.body.appendChild(trail);
+
+    trail.style.left = `${e.pageX}px`;
+    trail.style.top = `${e.pageY}px`;
+
+    // Eliminar el rastro después de que termine la animación
+    trail.addEventListener('animationend', function() {
+        trail.remove();
+    });
+});  
+</script>
+<body>
+    <header>
+        
+        <nav class="ed-item">
+            <div >
+                <div class="ed-item">
+                   <img src="logo.png" alt="inicio" class="logo-img">
+                </div>
+               
+                </div> 
+            <ul>
+              
+                <li><a href="index.html" class="link"><span>Inicio</span></a></li>
+                <li><a href="#" class="link"><span>Tipos</span></a></li>
+                <li><a href="#" class="link"><span>Contacto</span></a></li>
+                <li><a href="#" class="link"><span>Nosotros</span></a></li>
+               
+            </ul>    
+        </nav>  
+            </header> 
+    
+            <div class="card-area">
+                <div class="wrapper2">
+                   <div class="box-area">
+                    <div class="box">
+                        <img src="images/estructura.png" alt="">
+                        <div class="overlay">
+                            <h3>Que son
+                                las base de datos Relacionales</h3>
+                            <p>Una base de datos relacional es un tipo de base de datos que almacena y proporciona acceso a puntos de datos relacionados entre sí. Las bases de datos relacionales se basan en el modelo relacional, una forma intuitiva y directa de representar datos en tablas. En una base de datos relacional, cada fila en una tabla es un registro con una ID única, llamada clave. Las columnas de la tabla contienen los atributos de los datos y cada registro suele tener un valor para cada atributo, lo que simplifica la creación de relaciones entre los puntos de datos.</p>
+                           <br>
+                              
+                        </div>
+                    </div>
+                 
+                   
+                   </div> 
+                </div>
+            </div>
+
+            <div class="card-area">
+                <div class="wrapper2">
+                   <div class="box-area">
+                    <div class="box">
+                        <img src="bases-datos-relacionales-1.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Estructura</h3>
+                            <p>El modelo relacional en bases de datos implica una separación entre las estructuras lógicas de los datos (tablas, vistas, índices) y las estructuras físicas de almacenamiento. Esto permite a los administradores de bases de datos gestionar el almacenamiento sin afectar el acceso a los datos. Las operaciones de base de datos se dividen en lógicas y físicas, donde las primeras especifican el contenido necesario y las segundas determinan cómo acceder a esos datos. Para mantener la precisión y accesibilidad, las bases de datos relacionales siguen reglas de integridad, como evitar duplicados en las tablas para evitar datos erróneos.</p>
+                           <br>
+                              
+                        </div>
+                    </div>
+                 
+                   
+                   </div> 
+                </div>
+            </div>
+
+            <div class="card-area">
+                <div class="wrapper2">
+                   <div class="box-area">
+                    <div class="box">
+                        <img src="relacionales.jpeg" alt="">
+                        <div class="overlay">
+                            <h3>Conceptos</h3>
+                            <p>A continuación voy a describir algunos conceptos y operaciones básicas con las bases de datos relacionales para entender su funcionamiento y familiarizarnos con sus características.</p>
+                           <br>
+                              
+                        </div>
+                    </div>
+                 
+                   
+                   </div> 
+                </div>
+            </div>
+
+      
+
+  
+ 
+
+
+      
+           
+                
+                
+                <div class="ed-container">
+                    
+                        <table border="1" class="border">
+                            <tbody>
+                                <tr>
+                                    <th>Creacion de una tabla</th>
+                                    <th>Podemos crear una tabla con la sentencia CREATE TABLE. Debemos especificar los campos que 
+                                        queremos que tenga. Podemos restringir un campo para que no tenga valores null y establecer claves primarias y ajenas.</th></tr>
+                               <br> <tr>
+                                    <th>Inserción</th>
+                                    <th>Para insertar valores en una tabla existente especificaremos el nombre de la tabla y los valores que queremos insertar a continuación.</th>
+                                </tr>
+                                <br><tr>
+                                    <th>Actualizacion</th>
+                                    <th>Podemos actualizar los valores que queramos estableciendo condiciones en la sección WHERE.</th>
+                                </tr>
+                                <br><tr>
+                                    <th>Busqueda</th>
+                                    <th>Si queremos obtener los registros de una tabla que cumplen unas determinadas condiciones podemos hacerlo usando un SELECT.</th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+               
+           <br> 
+           
+        
+        <h2 class="h2-sub">Tipos de Base de Datos</h2> 
+        <br>
+    <main class="ed-container">
+        
+   
+    <div class="gallery">
+        <div class="card"><a href="BDDNosql.html">Base de datos NoSQL</a></div>
+        <div class="card"><a href="BDDRelacionales.html">Base de datos Relacionales</a></div>
+        <div class="card"><a href="BDDPOO.html">Base de datos Orientada a Objetos</a></div>
+        <div class="card"><a href="BDDistribuidas.html">Base de datos Distribuidas</a></div>
+        
+        
+    </div>
+</main>   
+<br>
+
+<div class="wrapper">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+
+  </div>
+  <footer>
+  <div class="banner"></div>
+<div class="footer">
+<div class="waves">
+    <div class="wave" id="wave"></div>
+    <div class="wave" id="wave"></div>
+    <div class="wave" id="wave"></div>
+    <div class="wave" id="wave"></div>
+</div>
+
+<div class="row">
+    <div class="col">
+    <ul>
+        <li>
+            <div class="logo">
+                <a href="#">Logo</a>
+            </div>
+        </li>
+      
+    </ul>
+       
+    </div>
+ 
+   
+  
+
+    
+</div>
+ <p>&copy; 2024 || Anibal Alejandro Jahuar Chirinos </p>
+</footer>
+
+</body>
+</html>
