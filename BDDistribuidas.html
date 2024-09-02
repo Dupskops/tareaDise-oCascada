@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <link rel="stylesheet" type="text/css" href="edgrid.css">
+    <link rel="icon" href="logo.png">
+    <title>Document</title>
+</head>
+<script>
+  document.addEventListener('mousemove', function(e) {
+    const trail = document.createElement('div');
+    trail.className = 'trail';
+    document.body.appendChild(trail);
+
+    trail.style.left = `${e.pageX}px`;
+    trail.style.top = `${e.pageY}px`;
+
+    // Eliminar el rastro después de que termine la animación
+    trail.addEventListener('animationend', function() {
+        trail.remove();
+    });
+});  
+</script>
+<body>
+    <header>
+        
+        <nav class="ed-item">
+            <div >
+                <div class="ed-item">
+                   <img src="logo.png" alt="inicio" class="logo-img">
+                </div>
+               
+                </div> 
+            <ul>
+              
+                <li><a href="index.html" class="link"><span>Inicio</span></a></li>
+                <li><a href="#" class="link"><span>Tipos</span></a></li>
+                <li><a href="#" class="link"><span>Contacto</span></a></li>
+                <li><a href="#" class="link"><span>Nosotros</span></a></li>
+               
+            </ul>    
+        </nav>  
+            </header>  
+    
+            <div class="card-area">
+                <div class="wrapper2">
+                   <div class="box-area">
+                    <div class="box">
+                        <img src="BddDistribuidas (1).jpg" alt="">
+                        <div class="overlay">
+                            <h3>Que son las base de datos Distribuidas?</h3>
+                            <p>Las bases de datos distribuidas son fundamentales en la era digital, donde la cantidad de datos ha crecido enormemente debido a Internet y sus tecnologías. Estas bases de datos permiten a las empresas innovar y adaptarse a la transformación digital de manera eficiente. Aunque ofrecen numerosas ventajas y beneficios, también presentan algunas desventajas. Son ampliamente utilizadas en áreas como Big Data, Blockchain y análisis de datos, siendo crucial la formación en estas disciplinas para impulsar la carrera profesional. Las bases de datos distribuidas son sistemas donde la información se guarda de forma segura en diversos nodos interconectados en una red de computadoras. Cada nodo contiene una copia de los datos, lo que resulta en ahorros de costos y otras ventajas que exploraremos posteriormente.</p>
+                           <br>
+                              
+                        </div>
+                    </div>
+                 
+                   
+                   </div> 
+                </div>
+            </div>
+
+
+            <div class="card-area">
+                <div class="wrapper2">
+                   <div class="box-area">
+                    <div class="box">
+                        <img src="distribuidas (1).jpg" alt="">
+                        <div class="overlay">
+                            <h3>Tipos</h3>
+                            
+                
+                               
+                     </p>
+                     <h4>Homogéneas</h4> 
+<p>Las bases de datos distribuidas homogéneas son consistentes en atributos y recursos en todos los nodos, lo que facilita su gestión.</p>
+<h4>Heterogéneas</h4>
+<p>Las bases de datos distribuidas heterogéneas ofrecen mayor adaptabilidad, pero requieren procesos adicionales para manejar la variabilidad entre nodos y protocolos.</p>
+
+                    </div>
+                     
+                     
+                        
+                              
+                        </div>
+                 
+                 
+                   
+                   </div> 
+                </div>
+            </div>
+
+
+  
+
+
+    <section>
+        <h2 class="h2-sub">Ventajas y Desventajas</h2>
+        <h1 class="head hea-dark">
+            DE USO DE LAS BASES DE DATOS DISTRIBUIDAS
+           </h1>
+            <div class="ed-container">
+                <table border="1">
+                    <thead>
+                        <th>Ventajas</th>
+                        <th>Desventajas</th>
+                    </thead>
+                    <tbody>
+                        <th>
+                            <li>Cada nodo de la red puede operar de manera independiente y local
+        
+                            </li><br>
+                            <li>Mejoran la accesibilidad, fiabilidad y eficacia al acceder a los datos.
+        
+                            </li><br>
+                            <li>Pueden crecer de manera ilimitada según los requerimientos de la empresa o entidad.
+        
+                            </li><br>
+                            <li>Facilitan la expansión sin requerir inversiones significativas.
+        
+                            </li><br>
+                            <li>La información es accesible desde cualquier ubicación debido al compartimiento de recursos entre los nodos.
+        
+                            </li><br>
+                        </th>
+                        <th>
+                            <li>Implementar medidas de seguridad y controlar el acceso a los datos resulta más desafiante.
+        
+                            </li><br>
+                            <li>Errores en la red pueden comprometer seriamente la privacidad de la información.
+        
+                            </li><br>
+                            <li>La implementación de este sistema es más compleja.
+        
+                            </li><br>
+                            <li>Lograr una transparencia eficiente puede requerir una inversión significativa en tiempo y recursos.
+        
+                            </li><br>
+                            <li>La falta de experiencia y estándares en el desarrollo e implementación de estas bases de datos puede ser un problema.
+        
+                            </li><br>
+                            <li>    Pueden surgir problemas de rendimiento o fiabilidad debido a las cuestiones mencionadas anteriormente.
+        
+                            </li><br>
+                        </th>
+                    </tbody>
+                </table>
+            </div>
+            
+        
+        </section>
+      
+           
+                 
+               
+            
+           
+        
+        <h2 class="h2-sub">Tipos de Base de Datos</h2> 
+        <br>
+    <main class="ed-container">
+        
+   
+    <div class="gallery">
+        <div class="card"><a href="BDDNosql.html">Base de datos NoSQL</a></div>
+        <div class="card"><a href="BDDRelacionales.html">Base de datos Relacionales</a></div>
+        <div class="card"><a href="BDDPOO.html">Base de datos Orientada a Objetos</a></div>
+        <div class="card"><a href="BDDistribuidas.html">Base de datos Distribuidas</a></div>
+      
+        
+    </div>
+</main>   
+
+<div class="wrapper">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+
+  </div>
+  <footer>
+  <div class="banner"></div>
+<div class="footer">
+<div class="waves">
+    <div class="wave" id="wave"></div>
+    <div class="wave" id="wave"></div>
+    <div class="wave" id="wave"></div>
+    <div class="wave" id="wave"></div>
+</div>
+
+<div class="row">
+    <div class="col">
+    <ul>
+        <li>
+            <div class="logo">
+                <a href="#">Logo</a>
+            </div>
+        </li>
+      
+    </ul>
+       
+    </div>
+ 
+   
+  
+
+    
+</div>
+ <p>&copy; 2024 || Anibal Alejandro Jahuar Chirinos </p>
+</footer>
+</body>
+</html>
