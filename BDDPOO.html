@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <link rel="stylesheet" type="text/css" href="edgrid.css">
+    <link rel="icon" href="logo.png">
+    <title>Document</title>
+</head>
+<script>
+  document.addEventListener('mousemove', function(e) {
+    const trail = document.createElement('div');
+    trail.className = 'trail';
+    document.body.appendChild(trail);
+
+    trail.style.left = `${e.pageX}px`;
+    trail.style.top = `${e.pageY}px`;
+
+    // Eliminar el rastro después de que termine la animación
+    trail.addEventListener('animationend', function() {
+        trail.remove();
+    });
+});  
+</script>
+<body>
+    <header>
+        
+        <nav class="ed-item">
+            <div >
+                <div class="ed-item">
+                   <img src="logo.png" alt="inicio" class="logo-img">
+                </div>
+               
+                </div> 
+            <ul>
+              
+                <li><a href="index.html" class="link"><span>Inicio</span></a></li>
+                <li><a href="#" class="link"><span>Tipos</span></a></li>
+                <li><a href="#" class="link"><span>Contacto</span></a></li>
+                <li><a href="#" class="link"><span>Nosotros</span></a></li>
+               
+            </ul>    
+        </nav>  
+            </header>  
+    
+            <div class="card-area">
+                <div class="wrapper2">
+                   <div class="box-area">
+                    <div class="box">
+                        <img src="BDDPoo (1).jpg" alt="">
+                        <div class="overlay">
+                            <h3>Que son las base de datos POO?</h3>
+                            <p>En contraste con el modelo relacional,
+                                una base de datos orientada a objetos organiza 
+                                la información en objetos que contienen datos y 
+                                métodos para manipularlos. No sigue una estructura 
+                                tabular rígida; en su lugar, cada objeto tiene un 
+                                identificador único y puede contener diferentes tipos de información y funcionalidades. Esta estructura se asemeja a una serie de cajas etiquetadas, donde no hay una relación directa entre la ubicación física y el contenido de cada objeto. En lugar de eso, se debe ubicar el objeto específico para acceder a la información dentro de él.</p>
+                           <br>
+                              
+                        </div>
+                    </div>
+                 
+                   
+                   </div> 
+                </div>
+            </div>
+
+            <div class="card-area">
+                <div class="wrapper2">
+                   <div class="box-area">
+                    <div class="box">
+                        <img src="poo (1).jpg" alt="">
+                        <div class="overlay">
+                            <h3>Uso de las base de datos POO</h3>
+                            <p>La base de datos orientada a objetos ha 
+                                encontrado su nicho de aplicación en áreas 
+                                tales como la ingeniería, las bases de datos 
+                                espaciales, las telecomunicaciones y en áreas 
+                                científicas como la física de alta energía y la biología 
+                                molecular. Otro conjunto de bases de datos orientadas a 
+                                objetos se centra en el uso integrado en dispositivos, 
+                                paquetes de software y sistemas en tiempo real.</p>
+                           <br>
+                              
+                        </div>
+                    </div>
+                 
+                   
+                   </div> 
+                </div>
+            </div>
+
+
+
+      
+
+
+
+
+    <section>
+        <h2 class="h2-sub">Características</h2>
+        <h1 class="head hea-dark">
+            DE USO DE LAS BASES DE DATOS ORIENTADA A OBJETOS
+           </h1>
+            <div class="ed-container">
+                <p>Una base de datos orientada a objetos posee las mismas características que se usan en la programación orientada a objetos. Estas son:</p>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Polimorfismo</td>
+                            <td>Herencia</td>
+                            <td>Encapsulamiento</td>
+                            <td> Abstraccion</td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>Es la capacidad que tiene un objeto para adoptar múltiples formas.	</th>
+                                <th>Dentro de modelo de base de datos orientado a objeto, crea relaciones jerárquicas entre distintas 
+                                    clases que permiten que muchas partes del código puedan reciclarse.	</th>
+                                <th>Es la capacidad de agrupar diferentes datos y objetos en una sola clase u objeto mayor,	</th>
+                                <th>La encapsulación del modelo de base de datos orientado a objetos hace que el proceso de abstracción 
+                                    en una base de datos orientada a objetos sea posible, ya que elimina toda la información no esencial y
+                                     permite representar solo las características de datos relevantes para la funcionalidad necesaria.	</th>
+                            </tr>
+                         
+                        </tbody>
+                        
+                    
+                </table>
+            </div>
+            
+        
+        </section>
+      
+           
+                 
+               
+            
+           
+        
+        <h2 class="h2-sub">Tipos de Base de Datos</h2> 
+        <br>
+    <main class="ed-container">
+        
+   
+    <div class="gallery">
+        <div class="card"><a href="BDDNosql.html">Base de datos NoSQL</a></div>
+        <div class="card"><a href="BDDRelacionales.html">Base de datos Relacionales</a></div>
+        <div class="card"><a href="BDDPOO.html">Base de datos Orientada a Objetos</a></div>
+        <div class="card"><a href="BDDistribuidas.html">Base de datos Distribuidas</a></div>
+      
+        
+    </div>
+</main>   
+
+
+<div class="wrapper">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+
+  </div>
+  <footer>
+  <div class="banner"></div>
+<div class="footer">
+<div class="waves">
+    <div class="wave" id="wave"></div>
+    <div class="wave" id="wave"></div>
+    <div class="wave" id="wave"></div>
+    <div class="wave" id="wave"></div>
+</div>
+
+<div class="row">
+    <div class="col">
+    <ul>
+        <li>
+            <div class="logo">
+                <a href="#">Logo</a>
+            </div>
+        </li>
+      
+    </ul>
+       
+    </div>
+ 
+   
+  
+
+    
+</div>
+ <p>&copy; 2024 || Anibal Alejandro Jahuar Chirinos </p>
+</footer>
+
+</body>
+</html>
