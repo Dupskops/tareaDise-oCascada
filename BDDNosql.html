@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <link rel="stylesheet" type="text/css" href="edgrid.css">
+    <link rel="icon" href="logo.png">
+    <title>Document</title>
+</head>
+<script>
+  document.addEventListener('mousemove', function(e) {
+    const trail = document.createElement('div');
+    trail.className = 'trail';
+    document.body.appendChild(trail);
+
+    trail.style.left = `${e.pageX}px`;
+    trail.style.top = `${e.pageY}px`;
+
+    // Eliminar el rastro después de que termine la animación
+    trail.addEventListener('animationend', function() {
+        trail.remove();
+    });
+});  
+</script>
+<body>
+    <header>
+        
+        <nav class="ed-item">
+            <div >
+                <div class="ed-item">
+                   <img src="logo.png" alt="inicio" class="logo-img">
+                </div>
+               
+                </div> 
+            <ul>
+              
+                <li><a href="index.html" class="link"><span>Inicio</span></a></li>
+                <li><a href="#" class="link"><span>Tipos</span></a></li>
+                <li><a href="#" class="link"><span>Contacto</span></a></li>
+                <li><a href="#" class="link"><span>Nosotros</span></a></li>
+               
+            </ul>    
+        </nav>  
+            </header> 
+    
+            <div class="card-area">
+                <div class="wrapper2">
+                   <div class="box-area">
+                    <div class="box">
+                        <img src="NoSQL.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Que son las base de datos NoSQL?</h3>
+                            <p>Las bases de datos NoSQL 
+                                estan diseñadas especificamente 
+                                para modelos de datos espícificos y 
+                                almacenan los datos en esquemas flexibles 
+                                que se escalan con facilidad para aplicaciones
+                                 modernas. Las base de datos NoSQL son mas reconocidas 
+                                por su facilidad de desarrollo, funcionalidad y rendimiento.</p>
+                           <br>
+                              
+                        </div>
+                    </div>
+                 
+                   
+                   </div> 
+                </div>
+            </div>
+
+            <div class="card-area">
+                <div class="wrapper2">
+                   <div class="box-area">
+                    <div class="box">
+                        <img src="images/sql.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Ventajas de las base de datos NoSQL</h3>
+                            <p>Las aplicaciones que utilizan las base de datos SQL se enfrentan a distintas dificultades colocando de ejemplo al momento que las aplicaciones tienen que procesar una gran cantidad de datos de fuentes dispares ocasionando que encajen en el modelo relacional en consecuencia origina redundancia, duplicacion de datos y problemas en el rendimiento a escala. En cambio las bases de datos NoSQL son diseñandas para modelos de datos no Relacionales con esquemas flexibles que permitían la creación de aplicaciones modernas. Estos son los beneficios de las base de datos NoSQL.</p>
+                           <br>
+                              
+                        </div>
+                    </div>
+                 
+                   
+                   </div> 
+                </div>
+            </div>
+
+            <div class="card-area">
+                <div class="wrapper2">
+                   <div class="box-area">
+                    <div class="box">
+                        <img src="tiposnosql.png" alt="">
+                        <div class="overlay">
+                            <h3>Casos de uso</h3>
+                            <div class="ed-container">
+                
+                                <ol>
+                                    <h4><li>Administración de datos en tiempo real</li></h4><br>
+                                    <p>Las bases de datos NoSQL permiten personalización y recomendaciones en tiempo real, como en Disney+.</p><br>
+                                    
+                                    <h4><li>Seguridad en la nube</li></h4><br>
+                                    <p>Las bases de datos de grafos ayudan a identificar y visualizar riesgos complejos, como lo hace Wiz con Amazon Neptune.</p><br>
+                                    
+                                    <h4><li>Aplicaciones de alta disponibilidad</li></h4><br>
+                                    <p>Las bases de datos NoSQL reducen la latencia y mejoran la disponibilidad, como en Snapchat.</p><br>
+                                </ol>
+                                
+                        </div>
+                        
+                           <br>
+                              
+                        </div>
+                    </div>
+                 
+                   
+                   </div> 
+                </div>
+            </div>
+
+      
+
+ 
+    
+   
+
+  
+      
+            <h2 class="h2-sub">Comparación</h2>
+            <h1 class="head hea-dark">
+                
+                DE LAS BASES DE DATOS NoSQL y SQL</h1>
+                <br>
+                <div class="ed-container">
+                    <table border="1">
+                        <thead>
+                            <tr>
+                                <th>SQL</th>
+                                <th>MongoDB</th>
+                                <th>SQl</th>
+                                <th>MongoDB</th>
+                                <th>SQL</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>tabla</td>
+                                <td>conjunto</td>
+                                <td>tabla</td>
+                                <td>tabla</td>
+                                <td>Bucket de datos</td>
+    
+    
+                            </tr>
+                            <tr>
+                                <td>fila</td>
+                                <td>documento</td>
+                                <td>elemento</td>
+                                <td>fila</td>
+                                <td>documento</td>
+                            </tr>
+                            <tr>
+                                <td>columna</td>
+                                <td>campo</td>
+                                <td>atributo</td>
+                                <td>columna</td>
+                                <td>campo</td>
+                            </tr>
+                            <tr>
+                                <td>Clave principal</td>
+                                <td>ObjectID</td>
+                                <td>Clave principal</td>
+                                <td>Clave principal</td>
+                                <td>ID del documento</td>
+                            </tr>
+                            <tr>
+                                <td>indice</td>
+                                <td>indice</td>
+                                <td>indice secundario</td>
+                                <td>indice</td>
+                                <td>indice</td>
+                            </tr>
+                            <tr>
+                                <td>ver</td>
+                                <td>ver</td>
+                                <td>indice secundario global</td>
+                                <td>vista matearializada</td>
+                                <td>ver</td>
+                            </tr>
+                            <tr>
+                                <td>tabla u objeto animado</td>
+                                <td>documento incrustado</td>
+                                <td>Mapa</td>
+                                <td>Mapa</td>
+                                <td>Mapa</td>
+                            </tr>
+                            <tr>
+                                <td>Matriz</td>
+                                <td>Matriz</td>
+                                <td>Lista</td>
+                                <td>Lista</td>
+                                <td>Lista</td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                    </div>
+               
+            
+           <br>
+        
+        <h2 class="h2-sub">Tipos de Base de Datos</h2> 
+        <br>
+    <main class="ed-container">
+        
+   
+    <div class="gallery">
+        <div class="card"><a href="BDDNosql.html">Base de datos NoSQL</a></div>
+        <div class="card"><a href="BDDRelacionales.html">Base de datos Relacionales</a></div>
+        <div class="card"><a href="BDDPOO.html">Base de datos Orientada a Objetos</a></div>
+        <div class="card"><a href="BDDistribuidas.html">Base de datos Distribuidas</a></div>
+    
+        
+    </div>
+</main>   
+<br>
+<div class="wrapper">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+
+  </div>
+  <footer>
+  <div class="banner"></div>
+<div class="footer">
+<div class="waves">
+    <div class="wave" id="wave"></div>
+    <div class="wave" id="wave"></div>
+    <div class="wave" id="wave"></div>
+    <div class="wave" id="wave"></div>
+</div>
+
+<div class="row">
+    <div class="col">
+    <ul>
+        <li>
+            <div class="logo">
+                <a href="#">Logo</a>
+            </div>
+        </li>
+      
+    </ul>
+       
+    </div>
+ 
+   
+  
+
+    
+</div>
+ <p>&copy; 2024 || Anibal Alejandro Jahuar Chirinos </p>
+</footer>
+
+</body>
+</html>
