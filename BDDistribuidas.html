@@ -8,21 +8,7 @@
     <link rel="icon" href="logo.png">
     <title>Document</title>
 </head>
-<script>
-  document.addEventListener('mousemove', function(e) {
-    const trail = document.createElement('div');
-    trail.className = 'trail';
-    document.body.appendChild(trail);
 
-    trail.style.left = `${e.pageX}px`;
-    trail.style.top = `${e.pageY}px`;
-
-    // Eliminar el rastro después de que termine la animación
-    trail.addEventListener('animationend', function() {
-        trail.remove();
-    });
-});  
-</script>
 <body>
     <header>
         
